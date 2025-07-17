@@ -103,9 +103,49 @@ main > section {
     gap: 24px;
 }
 
+.features{
+    gap: 140px;
+}
+
+#feature-section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.feature-card{
+    padding: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.feature-card .feature-card-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
 .our-features {
     margin-left: 130px;
     max-width: 530px;
+}
+
+#Experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: -100px;
+    margin-left: -100px;
+}
+
+#Experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.featured-architect img{
+    width: 100%;
 }
 
 #quick-list {
@@ -162,7 +202,8 @@ main > section {
 @media screen and (max-width: 576px) {
     .navbar,
     .nav-links,
-    .team {
+    .team,
+    .features {
         flex-direction: column;
     }
 
@@ -185,11 +226,21 @@ main > section {
     .our-features {
         margin-left: auto;
     }
+
+    #Experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
 }
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
-    .team {
+    .team,.features {
         flex-direction: column;
+    }
+
+     #Experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
     }
 
     .our-features{
